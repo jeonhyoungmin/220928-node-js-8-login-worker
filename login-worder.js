@@ -1,3 +1,6 @@
+
+const http = require('http');
+
 const element = {
   header: "<header> this is header </header>",
   body: "<body> this is body </body>",
@@ -16,3 +19,8 @@ const main = `
   ${element.body}
   ${element.footer}
 `
+
+http.createServer((request, response) => {
+  // ? 문서를 찍어내는 response 메서드들
+  // ? " 나 이제 문서 만들거야 "
+})
